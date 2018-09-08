@@ -1,0 +1,32 @@
+footer {
+  width: 80%;
+  display: flex;
+  padding: 15px 10px;
+  background-color: rgba(83,53,25,.60);
+  margin: 190px auto 50px;
+}
+
+footer p {
+    flex: 1;
+    margin: 0;
+}
+
+footer a {
+  text-decoration: underline;
+  text-decoration-color: #000111;
+  /*text-align: right;*/
+  flex: 1;
+  display: flex;
+  justify-content:flex-end;
+  margin: 0;
+  padding-left: 0;
+  color: rgba(11,8,0,1);
+}
+
+footer a:hover {
+
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #000000;
+}

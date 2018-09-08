@@ -1,0 +1,109 @@
+body {
+    font: 16px "Lato", Verdana, sans-serif;
+    color: rgba(13,7,0,1);
+    background-color: rgba(135,129,114,.4);
+}
+
+h2{
+    text-align: center;
+}
+
+.erreur {
+  margin:30px auto;
+  text-align: center;
+  width:70%;
+}
+
+.msg {
+  font-size:22px;
+}
+
+#titre {
+   margin: 0 auto;
+   width: 571px;
+   padding: 10px;
+}
+
+#login {
+  margin:50px auto;
+  width:50%;
+  min-height: 150px;
+  min-width: 132px;
+  max-width: 400px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  border: 4px solid rgba(255,195,17,1);
+  background-color: rgba(82,51,14,0.2);
+}
+
+::placeholder {
+  color: rgba(49,49,54,0.8);
+}
+
+
+/*= input focus effects css
+=========================== */
+:focus{outline: none;}
+
+.col-3{
+  /*float: left;*/
+  min-width: 129.54px;
+  max-width:50%;
+  margin: 0 auto;
+  position: relative;
+  top:20px;
+  } /* necessary to give position: relative to parent. */
+
+input[type="password"]{
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: rgba(49,49,54,1);
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: rgba(135,129,114,.5);
+}
+
+.effect-8 {
+border: 1px solid rgba(112,106,106,1);
+padding: 7px 14px 9px;
+transition: 0.4s;
+
+}
+
+.effect-8 ~ .focus-border:before,
+.effect-8 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 2px; background-color: rgba(255,195,17,0.8); transition: 0.3s;}
+.effect-8 ~ .focus-border:after{top: auto; bottom: 0; left: auto; right: 0;}
+.effect-8 ~ .focus-border i:before,
+.effect-8 ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: rgba(255,195,17,0.8); transition: 0.4s;}
+.effect-8 ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0;}
+.effect-8:focus ~ .focus-border:before,
+.effect-8:focus ~ .focus-border:after{width: 100%; transition: 0.3s;}
+.effect-8:focus ~ .focus-border i:before,
+.effect-8:focus ~ .focus-border i:after{height: 100%; transition: 0.4s;}
+
+
+.col-3:after {
+content: ""; /* Important, sinon l'élément n'est pas généré. */
+clear: both;
+}
+
+/*reste du css*/
+
+.btn {
+  padding: 5px 15px 5px 15px;
+  font: 17px/24px "Lato", Arial, sans-serif;
+  color: #ffcc00;
+  border: 2px solid rgba(255,195,17,1);
+  background-color: rgba(49,49,54,1);
+  width: 90px;
+  display: block;
+  margin: 50px auto 20px auto;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  color: #fff4c1;
+  border: 2px solid rgba(255,184,0,1); /*rgba(255,138,17,1)*/
+  background-color: rgba(65,62,59,1);
+}
